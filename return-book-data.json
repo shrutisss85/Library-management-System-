@@ -1,0 +1,19 @@
+[
+    {
+        "ID": "001",
+        "Name": "Angular", 
+        "Image": "book-asset/1.jpg" 
+    },
+ 
+    {
+        "ID": "002",
+        "Name": "JSON", 
+        "Image": "book-asset/2.jpg" 
+    },
+  
+    {
+        "ID": "003",
+        "Name": "Asp.Net", 
+        "Image": "book-asset/3.jpg"
+    }
+]

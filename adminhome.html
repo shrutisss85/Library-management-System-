@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Landing-page-librarian/adminstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Admin | Dashboard</title>
+    <link rel="shortcut icon" href="../img/admin.jpg">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav_icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a class="active_link" href="#">Admin</a>
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-clock-o"></i>
+                </a>
+                <a href="#">
+                    <img width="30" src="../img/admin.jpg" alt="">
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main__container">
+
+                <div class="main__title">
+                    <img src="../img/admin-dashboard.jpg" alt="">
+                    <div class="main__greeting">
+                        <h1>Hello Admin</h1>
+                        <p>Welcome to your admin dashboard</p>
+                    </div>
+                </div>
+
+                <div class="main__cards">
+
+                    <div class="card">
+                        <i class="fa fa-user-o fa-2x text-lightblue"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Subscribers</p>
+                            <span class="font-bold text-title">578</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-calendar-o fa-2x text-red"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Times of watching</p>
+                            <span class="font-bold text-title">2467</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-video-camera fa-2x text-yellow"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Videos</p>
+                            <span class="font-bold text-title">34</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-thumbs-up fa-2x text-green"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Likes</p>
+                            <span class="font-bold text-title">645</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="charts">
+                    <div class="charts__left">
+                        <div class="charts__left__tittle">
+                            <div>
+                                <h1>Daily Reports</h1>
+                                <!-- <p>Cupertino, California, USA</p> -->
+                            </div>
+                        </div>
+                        <div id="apex1"></div>
+                    </div>
+
+                    <div class="charts__right">
+                        <div class="charts__right__title">
+                            <div>
+                                <h1>Stats Reports</h1>
+                                <!-- <p>Cupertino, California, USA</p> -->
+                            </div>
+                            <i class="fa fa-usd"></i>
+                        </div>
+
+                        <div class="charts__right__cards">
+
+                            <div class="card1">
+                                <h1>Total Book Issue</h1>
+                                <p>756</p>
+                            </div>
+
+                            <div class="card2">
+                                <h1>Return</h1>
+                                <p>152</p>
+                            </div>
+
+                            <div class="card3">
+                                <h1>Users</h1>
+                                <p>3900</p>
+                            </div>
+
+                            <div class="card4">
+                                <h1>Online Readers</h1>
+                                <p>1881</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <div id="addmember" class="addmember" style="background-image: url(assets/home.jpg);">
+                    <div class="member__bottom" style="background: rgba(0,0,0,0.65); position: relative;">
+                        <div class="member__title" style="padding: 20px;">
+                            <h1 style="color: white;">Add Member</h1>
+                        </div><br>
+                        <div class="member__form">
+                            <form name="signup" action="" method="" style="text-align: center;">
+                                <i class="fa fa-user"></i><input type="text" name="firstname" style="height: 25px; width: 280px;" placeholder="First Name" required><br><br>
+                                <i class="fa fa-user"></i><input type="text" name="middlename" style="height: 25px; width: 280px;" placeholder="Middle Name" required><br><br>
+                                <i class="fa fa-user"></i><input type="text" name="lastname" style="height: 25px; width: 280px;" placeholder="Last Name" required><br><br>
+                                <i class="fa fa-calendar-o"></i><input type="date" style="color: black; height: 25px; width: 280px;" name="dob" placeholder="DD/MM/YYYY" required><br><br>
+                                <i class="fa fa-address-card"></i><input type="text" name="address" style="height: 25px; width: 280px;" placeholder="Address" required><br><br>
+                                <i class="fa fa-envelope"></i><input type="email" name="email" style="height: 25px; width: 280px;" placeholder="E-mail" required><br><br>
+                                <i class="fa fa-phone"></i><input type="text" name="phone" style="height: 25px; width: 280px;" placeholder="Phone" required><br><br>
+                                <i class="fa fa-user-circle-o"></i><input type="text" name="userid" style="height: 25px; width: 280px;" placeholder="USER ID" required><br><br>
+                                <i class="fa fa-key"></i><input type="password" name="password" style="height: 25px; width: 280px;" placeholder="Password" required><br><br>
+                                <button style="width: 150px; height: 25px; border-radius: 10px; color: white; background-color: blueviolet;">Add Member</button><br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <div id="addbook" class="addbook" style="background-image: url(assets/7.jpg); background-size: cover; background-position: center;">
+                    <div class="book__bottom" style="background: rgba(0,0,0,0.65); position: relative;">
+                        <div class="book__title" style="padding: 20px;">
+                            <h1 style="color: white;">Add Book</h1>
+                        </div><br>
+                        <div class="member__form">
+                             <form name="signup" action="" method="" style="text-align: center;">
+                                <i class="fa fa-user"></i><input type="text" name="booktitle" style="height: 25px; width: 280px;" placeholder="BOOK TITLE" required><br><br>
+                                <i class="fa fa-user"></i><input type="text" name="isbn" style="height: 25px; width: 280px;" placeholder="ISBN CODE" required><br><br>
+                                <i class="fa fa-user"></i><input type="text" name="authorname" style="height: 25px; width: 280px;" placeholder="AUTHOR NAME" required><br><br>
+                                <i class="fa fa-calendar-o"></i><input type="text" name="bookcategory" style="color: black; height: 25px; width: 280px;" placeholder="BOOK CATEGORY" required><br><br>
+                                <i class="fa fa-calendar-o"></i><input type="text" name="publishyear" style="color: black; height: 25px; width: 280px;" placeholder="PUBLISHED YEAR" required><br><br>
+                                <i class="fa fa-address-card"></i><input type="file" name="file" style="height: 25px; width: 280px; color: white;" placeholder="Book File" required><br><br>
+                                <i class="fa fa-key"></i><input type="password" name="password" style="height: 25px; width: 280px;" placeholder="Admin Password" required><br><br>
+                                <button style="width: 150px; height: 25px; border-radius: 10px; color: white; background-color: rgb(27, 25, 25); color: white; font-weight: bold;">Add Book</button><br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <div id="issuelist" class="issuelist" style="background-image: url(assets/vdbg.jpg); background-size: cover; background-position: center;">
+                    <div class="issuelist__bottom" style="background: rgba(0,0,0,0.65); position: relative;">
+                        <div class="issuelist__title" style="padding: 20px;">
+                            <h1 style="color: white;">Issue List</h1>
+                        </div><br>
+                        <div id="bookissue">
+                             <!-- VIEW HOW MANY BOOKS ISSUES -->
+                            <table id='table'>
+                                <!-- HEADING FORMATION -->
+                                <tr>
+                                    <th>USER ID</th>
+                                    <th>BOOK LUND</th>
+                                    <th>BOOK RETURN</th>
+                                    <th>PENDING DAYS</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <script type="text/javascript">
+                                $(document).ready(function () {
+
+                                    // FETCHING DATA FROM JSON FILE
+                                    $.getJSON("data.json",
+                                            function (data) {
+                                        var student = '';
+
+                                        // ITERATING THROUGH OBJECTS
+                                        $.each(data, function (key, value) {
+
+                                            //CONSTRUCTION OF ROWS HAVING
+                                            // DATA FROM JSON OBJECT
+                                            student += '<tr>';
+                                            student += '<td>' +
+                                                value.GFGUserName + '</td>';
+
+                                            student += '<td>' +
+                                                value.NoOfProblems + '</td>';
+
+                                            student += '<td>' +
+                                                value.TotalScore + '</td>';
+
+                                            student += '<td>' +
+                                                value.Articles + '</td>';
+
+                                            student += '</tr>';
+                                        });
+
+                                        //INSERTING ROWS INTO TABLE
+                                        $('#table').append(student);
+                                    });
+                                });
+                        </script>
+
+                    </div>
+                </div><br><br>
+
+                <div id="bookreturn" class="bookreturn" style="background-image: url(../Landing-page-librarian/assets/1\ \(1\).jpg); background-size: cover; background-position: center; height: 600px;">
+                    <div class="bookreturn__bottom">
+                        <div class="bookreturn__title" style="padding: 20px;">
+                            <h1 style="color: white;">Return book</h1>
+                        </div><br>
+                        <div id="returnbook">
+                             <!-- VIEW HOW MANY BOOKS RETURN -->
+                        </div>
+                        <!-- "<img src='"+value.Image+"' />" -->
+
+                    </div>
+                </div><br><br>
+
+                <div id="specialdays" class="specialdays" style="background-image: url(../Landing-page-librarian/assets/1\ \(2\).jpg); background-size: cover; background-position: center; height: 600px;">
+                    <div class="member__bottom">
+                        <div class="member__title" style="padding: 20px;">
+                            <h1 style="color: white;">Special Days</h1>
+                        </div><br>
+                        <div id="specialdays__offers">
+                            <div class="calender-container" style="padding-left: 50px;">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=siva0711997%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="450" frameborder="0" scrolling="yes"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="../img/logo.png" alt="">
+                    <!-- <h1>Admin</h1> -->
+                </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+                <h2>LOG</h2>
+                <div class="sidebar__link">
+                    <i class="fa fa-user-secret"></i>
+                    <a href="adminhome.html">Admin Management</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-building-o"></i>
+                    <a href="#addmember">Add Member</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-wrench"></i>
+                    <a href="#addbook">Add Book</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-archive"></i>
+                    <a href="#issuelist">Issue List</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-question"></i>
+                    <a href="#bookreturn">Returns</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-calendar-check-o"></i>
+                    <a href="#specialdays">Special Days</a>
+                </div>
+                <div class="sidebar__logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="../index.html">Log out</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!---Apex charts cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+</html>
